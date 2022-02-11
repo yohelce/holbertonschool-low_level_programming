@@ -6,6 +6,8 @@
  * But for multiples of three print Fizz instead of the number
  * and for the multiples of five print Buzz.
  * For numbers which are multiples of both three and five print FizzBuzz.
+ *
+ * Return: 0 if is successful
  */
 
 int main(void)
@@ -13,9 +15,9 @@ int main(void)
 	int n;
 
 	for (n = 1; n <= 100; n++)
-	{	
+	{
 		if (n < 100)
-		{	
+		{
 			if ((n % 3 == 0) && !(n % 5 == 0))
 			{
 				printf("Fizz ");
@@ -33,7 +35,7 @@ int main(void)
 				printf("%d ", n);
 			}
 		}
-		if(n == 100)
+		if (n == 100)
 		{
 			printf("Buzz\n");
 		}
