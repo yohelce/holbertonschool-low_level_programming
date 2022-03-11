@@ -1,12 +1,16 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
+
 /**
  * print_all - prints anything
  * @format: list of types or arguments to be passed
  * Return: void
  */
+
 void print_all(const char * const format, ...)
 {
-	va_list valist;
+	va_list ap;
 	char *temp_s;
 	int i = 0, orders;
 
