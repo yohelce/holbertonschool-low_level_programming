@@ -1,0 +1,6 @@
+#Compile the program school.c
+CC = gcc
+SRC = school.c main.c
+
+all:
+	$(CC) $(SRC) -o school 	
