@@ -1,0 +1,5 @@
+#Compiler the program school.c
+all: school
+
+school: school.c main.c m.h
+	gcc main.c school.c -o school
